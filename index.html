@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <title>Test-game</title>
+</head>
+<body>
+  <main class="window">
+    <div class="map">
+      <div class="path">
+        <div class="hero"> 
+          <img src="./images/hero.png">
+        </div>
+        <nav class="menu">
+          <div class="friends">
+            <button type="button" class="friends__button_left"></button>
+            <div class="friends__content-wrapper">
+              <ul class="friends__content-items">
+              </ul>
+            </div>
+            <button type="button" class="friends__button_right"></button>
+          </div>
+          <button type="button" class="friends__button_chat">
+            <img src="./images/button_chat.png">
+          </button>
+          <button type="button" class="friends__button_touniversity" style="margin-inline: 3px">
+            <img src="./images/button_toUniversity.png">
+          </button>
+          <button type="button" class="friends__button_mail">
+            <img src="./images/button_mail.png">
+          </button>
+          <button type="button" class="friends__button_scores">
+            <img src="./images/button_ranks.png">
+          </button>
+
+        </nav>
+      </div>
+    </div>
+
+    <div class="overlay" >
+    </div>
+    <section class="modal">
+      <div class="modal__title">
+        <h2 class="modal__title-text">Рейтинг игроков<h2>
+      </div>
+      <button type="button" class="modal__exit-button"></button>
+        <div class="modal__content">
+          <div class="modal__content-header">
+            <p class="modal__content-header-text" >Место</p>
+            <p class="modal__content-header-text" ></p>
+            <p class="modal__content-header-text" style="text-align: left" >Имя Фамилия</p>
+            <p class="modal__content-header-text" >Опыт</p>
+          </div>
+          <ul class="modal__content-items">
+          </ul>
+        </div>
+    </section>
+
+  </main>
+
+  <script src="./index.js" type="module"></script>
+</body>
+</html>
